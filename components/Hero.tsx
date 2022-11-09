@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundSquares from './BackgroundCircles';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import Link from 'next/link';
 
 type Props = {};
 
@@ -8,22 +9,41 @@ function Hero({}: Props) {
     const [text, count] = useTypewriter({
     words: [
         "Hi my name is Kyronne, but you can call me Ky 👋", 
-        "Full Stack Dev", 
-        "Passionate about community"
+        "My background is in Data & Charity.", 
+        "Passionate about community & sustainability"
     ],
     loop: true,
-    delaySpeed: 1500,
+    delaySpeed: 350,
 });
   return ( <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
         <BackgroundSquares />
         <img className="relative rounded-full h-32 w-32 mx-auto object-cover"src="https://avatars.githubusercontent.com/u/57007690?v=4"
         alt="Profile Picture" 
         />
-        <div></div> 
-        <h1>   
+        <div className="z-20">
+        <h2 className="text-sm uppercase text-gray-500  tracking-[7px]">
+         Full Stack Developer
+        </h2>
+        <h1 className="text-2xl lg:text-2xl font-semibold px-10">  
         <span>{text}</span>
         <Cursor cursorColor="gray"/>
-    </h1>
+            </h1>
+
+            <div className="pt-5">
+                <Link href="#about">
+                    <button className="heroButtons">About</button>
+                </Link>
+                <Link href="#experience">
+                    <button className="heroButtons">Experience</button>
+                </Link>
+                <Link href="#skills">
+                    <button className="heroButtons">Skills</button>
+                </Link>
+                <Link href="#projects">
+                    <button className="heroButtons">Projects</button>
+                </Link>
+            </div>
+        </div> 
     </div>
   );
 }
