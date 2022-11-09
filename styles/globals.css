@@ -6,6 +6,6 @@
   .heroButtons {
     @apply px-6 py-2 border border-[#f5F5f5] rounded-full uppercase text-xs
     tracking-widest text-gray-500 transition-all 
-    hover:border-[#F7AB0A]/40 hover:text-[#f7ab0a]/40;
+    hover:border-teal-400/80;
   }
 }
