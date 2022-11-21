@@ -28,7 +28,7 @@ function ContactMe({}: Props) {
             Contact
         </h3>
         <div className="flex flex-col space-y-10">
-            <h4 className='text-2xl font-semibold text-center break-normal max-w-[80%]'>
+            <h4 className='text-2xl font-semibold text-center break-normal'>
                 Here's how to reach me.
                 </h4>
 
