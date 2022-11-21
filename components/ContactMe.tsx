@@ -23,12 +23,12 @@ function ContactMe({}: Props) {
 }
   return (
     <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row 
-    max-w-7xl px-10 justify-evenly mx-auto items-center'>
-        <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
+    md:max-w-7xl px-10 justify-evenly mx-auto items-center'>
+        <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             Contact
         </h3>
         <div className="flex flex-col space-y-10">
-            <h4 className='text-2xl font-semibold text-center break-normal'>
+            <h4 className='text-2xl font-semibold text-center break-normal max-w-[80%]'>
                 Hope you like my Portfolio, here's how to reach me.
                 </h4>
 
