@@ -1,3 +1,5 @@
+import { Url } from "url";
+
 interface SanityBody {
     _createdAt: string;
     _id: string;
@@ -18,6 +20,7 @@ export interface PageInfo extends SanityBody {
     address: string;
     backgroundInformation: string;
     email: string;
+    calendly: string;
     role: string;
     heroImage: Image;
     name: string;
@@ -40,7 +43,7 @@ export interface Skill extends SanityBody {
 }
 
 export interface Project extends SanityBody {
-    title: string;
+    Title: string;
     _type: "project";
     image: Image;
     linkToBuild: string;

@@ -6,7 +6,7 @@ import { Social } from "../typings"
 
 type Props = {
     socials: Social[]
-}
+};
 
 function Header({ socials }: Props) {
   return (
@@ -27,16 +27,14 @@ function Header({ socials }: Props) {
 
             }}
         className='flex flex-row items-center'>
-        {/* Social Icons */}
-        <SocialIcon url="https://www.linkedin.com/in/kyronne" 
+        {socials.map((social) => (
+        
+        <SocialIcon 
+            key={social._id}
+            url={social.url}
             fgColor='gray'
             bgColor='transparent' />
-        <SocialIcon url="https://twitter.com/kyronne" 
-            fgColor='gray'
-            bgColor='transparent' />
-        <SocialIcon url="https://www.github.com/Kyronne" 
-            fgColor='gray'
-            bgColor='transparent'/>
+             ))}
         
         </motion.div>
         

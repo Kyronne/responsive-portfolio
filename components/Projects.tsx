@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
+import { title } from 'process';
 import React from 'react'
+import { urlFor } from '../sanity';
+import { Project } from "../typings"
 
-type Props = {}
+type Props = {
+    projects: Project[];
+}
 
-function Projects({}: Props) {
-    const projects = [1, 2, 3];
+function Projects({ projects }: Props) {
     return (
      <motion.div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
      initial={{ opacity: 0 }}
@@ -13,9 +17,9 @@ function Projects({}: Props) {
         <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
             Projects</h3>
          <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
-            {projects.map((project, i) => (
+            {projects?.map((project, i) => (
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:-44 h-screen'>
-                    <motion.img
+                    <motion.img className='max-w-3xl'
                         initial={{
                             y: -300,
                             opacity: 0,
@@ -23,17 +27,28 @@ function Projects({}: Props) {
                         transition={{ duration: 1.2 }}
                         whileInView={{ opacity: 1, y:0 }}
                         viewport={{ once: true}}
-                     src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796Bcf9121a4a0795b5022b6b2-66x375.png"    
+                     src={urlFor(project?.image).url()}
                      alt=""   
                     />
 
                     <div className='space-y-10 px-0 md:px-10 max-w'>
                         <h4 className='text-4xl font-semibold text-center'>
-                         <span className='underline decoration-[#bfc1c2]/50'>Case Study {i + 1} of {projects.length}:</span>{" "}UPS Clone
+                         <span className='underline decoration-[#bfc1c2]/50'>
+                            Case Study {i + 1} of {projects.length}:
+                            </span>{" "}
+                         {project?.Title}
                         </h4>
-
+                        <div className="flex items-center space-x-2 justify-center">
+                        {project.technologies.map(technology => (
+                            <img 
+                            className='h-8 w-8'
+                            key={technology._id}
+                            src={urlFor(technology.image).url()}
+                            />
+                        ))}
+                        </div>
                         <p className='text-lg text-center md:text-left'>
-                        I am passionate about showcasing data in a way that is informative and educational for those that may be beginners but also provides value to those who are stakeholders or involved with the organisations/protocols I have created reports on. I'm currently in the top 10 contributors to MetricsDao.
+                        {project?.summary}
                         </p>
                     </div>
                 </div>
