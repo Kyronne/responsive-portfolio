@@ -14,12 +14,12 @@ function Projects({ projects }: Props) {
      initial={{ opacity: 0 }}
      transition={{duration: 1.5}}
      whileInView={{ opacity: 1 }} >
-        <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
+        <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             Projects</h3>
          <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {projects?.map((project, i) => (
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:-44 h-screen'>
-                    <motion.img className='max-w-3xl'
+                <div key={project._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:-44 h-screen'>
+                    <motion.img className='max-w-3xl md:max-w-1xl'
                         initial={{
                             y: -300,
                             opacity: 0,
