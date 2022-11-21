@@ -28,22 +28,22 @@ function ContactMe({}: Props) {
             Contact
         </h3>
         <div className="flex flex-col space-y-10">
-            <h4 className='text-4xl font-semibold text-center'>
+            <h4 className='text-2xl font-semibold text-center'>
                 Hope you like my Portfolio, here's how to reach me.
                 </h4>
 
                 <div className="space-y-10">
                     <div className='flex items-center space-x-5 justify-center'>
                         <EnvelopeIcon className="text-[#D7D1D1] h-7 w-7 animate-pulse"/>
-                        <p className="text-2xl">contact@kyronne.com</p>
+                        <p className="text-1xl">contact@kyronne.com</p>
                     </div>
                     <div className='flex items-center space-x-5 justify-center'>
                         <MapPinIcon className="text-[#D7D1D1] h-7 w-7 animate-pulse"/>
-                        <p className="text-2xl"> London </p>
+                        <p className="text-1xl"> London </p>
                     </div>
                         <div className='flex items-center space-x-5 justify-center'>
                         <CalendarDaysIcon className="text-[#D7D1D1] h-7 w-7 animate-pulse"/>
-                        <p className="text-2xl">https://calendly.com/kyronne</p>
+                        <p className="text-1xl">https://calendly.com/kyronne</p>
                     </div>
                 </div>
 
