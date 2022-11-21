@@ -22,7 +22,7 @@ function ContactMe({}: Props) {
     {window.location.href = 'mailto:contact@kyronne.com?subject=${formData.subject}&body=Hi, my name is ${formData.message}. ${formData.message} (${formData.email})';
 }
   return (
-    <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row 
+    <div className='h-screen flex relative flex-col text-center md:flex-row 
     md:max-w-7xl px-10 justify-evenly mx-auto items-center'>
         <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             Contact
