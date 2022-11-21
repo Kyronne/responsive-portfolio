@@ -31,7 +31,7 @@ function About({ pageInfo }: Props) {
         src={urlFor(pageInfo?.profilePic).url()}
         className="-mb-20 md:nb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-tg md:w-64 md:h-95 xl:w-[256px] xl:h-[256px]"/>
         <div className="space-y-10 px-0 md:px-10">
-            <h4 className="text-4xl font-semibold">Here is a <span className="underline">little</span> background
+            <h4 className="text-4xl md:text-2xl font-semibold">Here is a <span className="underline">little</span> background
             </h4>
             <p  className="text-base"> {pageInfo?.backgroundInformation}</p>
         </div>
