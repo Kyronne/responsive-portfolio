@@ -29,7 +29,7 @@ function ContactMe({}: Props) {
         </h3>
         <div className="flex flex-col space-y-10">
             <h4 className='text-2xl font-semibold text-center break-normal max-w-[80%]'>
-                Hope you like my Portfolio, here's how to reach me.
+                Here's how to reach me.
                 </h4>
 
                 <div className="space-y-10">
