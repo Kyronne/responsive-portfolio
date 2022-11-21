@@ -14,7 +14,7 @@ function Projects({ projects }: Props) {
      initial={{ opacity: 0 }}
      transition={{duration: 1.5}}
      whileInView={{ opacity: 1 }} >
-        <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
+        <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl z-50">
             Projects</h3>
          <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {projects?.map((project, i) => (
