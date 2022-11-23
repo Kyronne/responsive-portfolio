@@ -46,17 +46,6 @@ function ContactMe({}: Props) {
                         <p className="text-1xl">https://calendly.com/kyronne</p>
                     </div>
                 </div>
-
-                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit'>
-                    <div className='flex space-x-2'>
-                        <input {...register('name')}placeholder="Name" className='contactInput'  type="text" />
-                        <input {...register('email')}placeholder="Name" className='contactInput' type="text" />
-                    </div>
-
-                    <input {...register('subject')}placeholder="Subject" className='contactInput' type="text" />
-                    <textarea {...register('message')}placeholder="Message"className='contactInput' />
-                    <button type="submit" className="bg-[#D7D1D1] py-5 px-10 rounded-md text-black font-bold">Submit</button>
-                </form>
             </div>
         </div>
   )
