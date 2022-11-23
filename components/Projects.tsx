@@ -18,7 +18,7 @@ function Projects({ projects }: Props) {
             Projects</h3>
          <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {projects?.map((project, i) => (
-                <div key={project._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:-44 h-screen'>
+                <div key={project._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:-44 top-24'>
                     <motion.img className='max-w-2xl'
                         initial={{
                             y: -300,
