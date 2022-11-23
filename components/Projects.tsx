@@ -10,7 +10,7 @@ type Props = {
 
 function Projects({ projects }: Props) {
     return (
-     <motion.div className="h-screen relative flex overflow-y-scroll flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+     <motion.div className="h-screen relative flex overflow-y-scroll scrollbar scrollbar-thumb-green-500 flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
      initial={{ opacity: 0 }}
      transition={{duration: 1.5}}
      whileInView={{ opacity: 1 }} >
@@ -19,7 +19,7 @@ function Projects({ projects }: Props) {
          <div className='relative w-full flex overflow-x-scroll scrollbar scrollbar-thumb-green-500 snap-x snap-mandatory z-20 top-24'>
             {projects?.map((project, i) => (
                 <div key={project._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:-44 '>
-                    <motion.img className='w-1/2 mx-w-fit'
+                    <motion.img className='xl:max-w-2xl max-w-xs'
                         initial={{
                             y: -300,
                             opacity: 0,
