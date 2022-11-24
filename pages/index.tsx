@@ -24,35 +24,35 @@ type Props = {
 
 const Home = ({pageInfo, experiences, projects, skills, socials}: Props) => {
   return (
-    <div className="bg-[#f5F5f5] h-screen snap-y p-2 snap-proximity overfolow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thumb-green-500" >
+    <div className="bg-[#f5F5f5] h-screen snap-y p-2 snap-proximity overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-thumb-green-500" >
       <Head>
         <title>{pageInfo?.name}'s -Portfolio</title>
       </Head>
       
       <Header socials={socials} />
 
-      <section id="hero" className="snap-start" >
+      <section id="hero" className="lg:snap-start" >
         <Hero pageInfo={pageInfo} />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="lg:snap-center">
         <About pageInfo={pageInfo} />
       </section>
       
-      <section id="experience" className="snap-center">
+      <section id="experience" className="lg:snap-center">
         <WorkExperience experiences={experiences}/> 
       </section>
 
       
-      <section id="skills" className="snap-start">
+      <section id="skills" className="lg:snap-start">
         <Skills skills={skills}/>
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="lg:snap-start">
         <Projects projects={projects} />
       </section>
 
-      <section id='contact' className="snap-start">
+      <section id='contact' className="lg:snap-start">
         <ContactMe />
       </section>
 
