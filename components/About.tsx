@@ -33,7 +33,7 @@ function About({ pageInfo }: Props) {
         <div className="space-y-10 px-0 md:px-10">
             <h4 className="text-4xl md:text-2xl font-semibold">Here is a <span className="underline">little</span> background
             </h4>
-            <p  className="text-base lg:w-2/3 overflow-auto"> {pageInfo?.backgroundInformation}</p>
+            <p  className="text-base overflow-auto"> {pageInfo?.backgroundInformation}</p>
         </div>
     </motion.div>
   )
