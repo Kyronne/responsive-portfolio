@@ -14,7 +14,7 @@ function About({ pageInfo }: Props) {
     initial={{ opacity: 0 }}
     transition={{duration: 1.5}}
     whileInView={{ opacity: 1 }}
-    className="flex flex-col relative h-fit min-h-screen overflow-auto text-center md:text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
+    className="flex flex-col relative h-fit min-h-screen overflow-auto text-center md:text-left md:flex-row max-w-full xl:w-2/3 px-10 justify-evenly mx-auto items-center">
         <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             About
         </h3>
@@ -34,7 +34,7 @@ function About({ pageInfo }: Props) {
         <div className="space-y-10 px-0 md:px-10">
             <h4 className="text-4xl md:text-2xl font-semibold">Here is a <span className="underline">little</span> background
             </h4>
-            <p  className="text-base overflow-auto"> {pageInfo?.backgroundInformation}</p>
+            <p  className="text-base xl:w-2/3 overflow-auto"> {pageInfo?.backgroundInformation}</p>
         </div>
     </motion.div>
   )
