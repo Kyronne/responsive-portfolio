@@ -6,6 +6,7 @@ import { urlFor } from '../sanity';
 type Props = {
     pageInfo: PageInfo
 }
+// Make text not take up as much of the width of the page //
 
 function About({ pageInfo }: Props) {
   return (
