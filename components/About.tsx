@@ -14,7 +14,7 @@ function About({ pageInfo }: Props) {
     initial={{ opacity: 0 }}
     transition={{duration: 1.5}}
     whileInView={{ opacity: 1 }}
-    className="flex flex-col relative h-fit min-h-screen overflow-auto text-center md:text-left md:flex-row max-w-full px-10 justify-evenly xl:justify-center mx-auto items-center">
+    className="flex flex-col relative h-fit min-h-screen overflow-auto text-center md:text-left md:flex-row max-w-full px-10 justify-evenly lg:justify-center lg:content-center mx-auto items-center">
         <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             About
         </h3>
