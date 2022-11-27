@@ -22,7 +22,7 @@ function skill({ skill, directionLeft}: Props) {
       <div className="absolute transition duration-300
       ease-in-out group-hover:hg-bg-black h-20 w-20 md:h-28 md:w-28 xl:w-32 xl:h-32 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
-        <p className="text-2xl font-bold text-yellow-300">{skill.progress}%</p>
+        <p className="text-2xl font-bold text-red-500">{skill.progress}%</p>
         </div>
     </div>
    </div>
