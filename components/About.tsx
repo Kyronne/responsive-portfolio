@@ -15,10 +15,9 @@ function About({ pageInfo }: Props) {
     transition={{duration: 1.5}}
     whileInView={{ opacity: 1 }}
     className="flex flex-col relative h-fit min-h-screen overflow-auto text-center md:text-left md:flex-row lg:w-3/5 max-w-full px-10 justify-evenly lg:justify-center lg:content-center mx-auto items-center">
-        <h3 className="absolute space-y-10 top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
+        <h3 className="absolute pb-10 top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             About
         </h3>
-        <div className="py=10 md:py-10">
         <motion.img
         initial={{
             x: -200,
@@ -36,7 +35,6 @@ function About({ pageInfo }: Props) {
             </h4>
             <p  className="text-base overflow-auto"> {pageInfo?.backgroundInformation}</p>
         </div>
-    </div>
     </motion.div>
   )
 }
