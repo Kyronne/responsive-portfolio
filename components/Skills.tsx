@@ -10,7 +10,6 @@ type Props = {
 function Skills({ skills }: Props) {
   return (
 
-    // I need a div here that does the same thing as the first div in the experience card // 
     <motion.div 
     initial={{ opacity: 0 }}
     transition={{duration: 1.5}}
