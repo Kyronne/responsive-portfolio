@@ -17,7 +17,7 @@ function ContactMe({}: Props) {
                 Here's how to reach me.
                 </h4>
 
-                <div className="space-y-10">
+                <div className="space-y-10 -ml-15px">
                     <div className='flex items-center space-x-5 justify-center'>
                         <EnvelopeIcon className="text-[#D7D1D1] h-7 w-7 animate-pulse"/>
                         <p className="text-1xl"><a href="mailto:contact@kyronne.com">contact@kyronne.com</a></p>
