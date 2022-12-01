@@ -33,10 +33,9 @@ function Projects({ projects }: Props) {
 
                     <div className='space-y-10 px-0 md:px-10 max-w'>
                         <h4 className='text-2xl font-semibold text-center'>
-                         <span className='underline decoration-[#bfc1c2]/50'>
-                            Case Study {i + 1} of {projects.length}:
-                            </span>{" "}
-                            <a href={project?.linkToBuild}>{project?.Title}</a>
+                         
+                            Case Study {i + 1} of {projects.length}:{" "}
+                            <span className='underline decoration-[blue]'><a href={project?.linkToBuild}>{project?.Title}</a></span>
                         </h4>
                         <div className="flex items-center space-x-2 justify-center">
                         {project.technologies.map(technology => (
