@@ -36,7 +36,7 @@ function Projects({ projects }: Props) {
                          <span className='underline decoration-[#bfc1c2]/50'>
                             Case Study {i + 1} of {projects.length}:
                             </span>{" "}
-                         {project?.Title}
+                            <a href={project?.linkToBuild}>{project?.Title}</a>
                         </h4>
                         <div className="flex items-center space-x-2 justify-center">
                         {project.technologies.map(technology => (
