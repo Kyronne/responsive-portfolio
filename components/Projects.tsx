@@ -10,7 +10,7 @@ type Props = {
 
 function Projects({ projects }: Props) {
     return (
-     <motion.div className="h-fit min-h-screen relative lg:max-h-screen flex flex-col overflow-auto text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+     <motion.div className="h-fit min-h-5/6 relative lg:max-h-screen flex flex-col overflow-auto text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
      initial={{ opacity: 0 }}
      transition={{duration: 1.5}}
      whileInView={{ opacity: 1 }} >
