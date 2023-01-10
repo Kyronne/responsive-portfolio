@@ -16,9 +16,9 @@ function Projects({ projects }: Props) {
      whileInView={{ opacity: 1 }} >
         <h3 className="absolute top-0 uppercase tracking-[15px] text-gray-500 text-2xl">
             Projects</h3>
-         <div className='absolute w-full lg:mx-h-80/100 flex lg:overflow-x-scroll scrollbar scrollbar-thumb-green-500 snap-x snap-mandatory z-20 top-24'>
+         <div className='absolute w-full lg:mx-75/100 flex lg:overflow-x-scroll scrollbar scrollbar-thumb-green-500 snap-x snap-mandatory z-20 top-24'>
             {projects?.map((project, i) => (
-                <div key={project._id} className='w-screen lg:mx-h-75/100 flex-shrink-0 snap-center flex flex-col space-y-5 overflow-y-hidden  items-center justify-center p-5 md:-44 '>
+                <div key={project._id} className='w-screen lg:mx-h-70/100 flex-shrink-0 snap-center flex flex-col space-y-5 overflow-y-hidden  items-center justify-center p-5 md:-44 '>
                     <motion.img className='max-w-md lg:max-w-xl'
                         initial={{
                             y: -300,
